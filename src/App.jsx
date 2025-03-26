@@ -1,4 +1,5 @@
 import App01Sync from "./asynchronous-js/App01Sync.jsx";
+import App02ACallback from "./asynchronous-js/App02ACallback.jsx";
 import App02Callback from "./asynchronous-js/App02Callback.jsx";
 import App03Promise from "./asynchronous-js/App03Promise.jsx";
 import App04AsyncAwait from "./asynchronous-js/App04AsyncAwait.jsx";
@@ -8,7 +9,8 @@ import App07AsyncAwaitFetchData from "./asynchronous-js/App07AsyncAwaitFetchData
 const App = () => {
 	return (
 		<div className="grid place-items-center min-h-screen bg-amber-200 font-inter">
-			<App01Sync />
+			{/* <App01Sync /> */}
+			<App02ACallback />
 			{/* <App02Callback /> */}
 			{/* <App03Promise /> */}
 			{/* <App04AsyncAwait /> */}

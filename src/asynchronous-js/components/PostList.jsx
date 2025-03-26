@@ -10,7 +10,7 @@ const PostList = ({ posts }) => {
 				{posts.map((post) => (
 					<Link
 						to={`/posts/${post.id}`}
-						className="pointer"
+						className="cursor-pointer"
 					>
 						<li
 							key={post.id}
