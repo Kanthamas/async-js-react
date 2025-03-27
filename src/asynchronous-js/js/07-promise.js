@@ -1,7 +1,7 @@
 "use strict";
 
 const myPromise = new Promise((resolve, reject) => {
-	let pizzaReady = true; 
+	let pizzaReady = true;
 
 	setTimeout(() => {
 		if (pizzaReady) {
@@ -11,6 +11,8 @@ const myPromise = new Promise((resolve, reject) => {
 		}
 	}, 2000);
 });
+
+console.log(myPromise);
 
 myPromise
 	.then((message) => {
@@ -24,7 +26,7 @@ myPromise
 	});
 
 // Chaining Promises
-function orderPizza() {
+/* function orderPizza() {
 	return new Promise((resolve) => {
 		setTimeout(() => resolve("Pizza is ready! 🍕"), 2000);
 	});
@@ -34,9 +36,9 @@ function orderDrink() {
 	return new Promise((resolve) => {
 		setTimeout(() => resolve("Drink is ready! 🥤"), 1000);
 	});
-}
+} */
 
-orderPizza()
+/* orderPizza()
 	.then((pizza) => {
 		console.log(pizza);
 		return orderDrink();
@@ -50,3 +52,4 @@ orderPizza()
 	.finally(() => {
 		console.log("Enjoy your meal! 😋");
 	});
+ */
