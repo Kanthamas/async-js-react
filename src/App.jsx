@@ -20,11 +20,11 @@ const App = () => {
 			{/* <App03Promise /> */}
 			{/* <App04AsyncAwait /> */}
 			{/* <App05AsyncAwait /> */}
-			<App05AsyncAwaitWithClearTimeOut />
+			{/* <App05AsyncAwaitWithClearTimeOut /> */}
 
 			{/* <App07AsyncAwaitFetchData /> */}
 
-			{/* <App08ReqResFetchData /> */}
+			<App08ReqResFetchData />
 		</div>
 	);
 };

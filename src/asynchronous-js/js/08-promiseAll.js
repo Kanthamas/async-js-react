@@ -6,8 +6,8 @@ const pizza = new Promise((resolve) =>
 const drink = new Promise((resolve) =>
 	setTimeout(() => resolve("🥤 Drink is ready!"), 2000)
 );
-const dessert = new Promise((resolve) =>
-	setTimeout(() => resolve("🍰 Dessert is ready!"), 1000)
+const dessert = new Promise((resolve, reject) =>
+	setTimeout(() => reject("🍰 Dessert is ready!"), 1000)
 );
 
 Promise.all([pizza, drink, dessert])
