@@ -1,21 +1,23 @@
 "use strict";
+
 const myPromise = new Promise((resolve, reject) => {
+	// const success = Math.random() > 0.5;
 	const success = true;
 
 	if (success) {
-		resolve("Operation successful!"); // Resolved with a value
+		resolve("Operation successful! ✅"); 
 	} else {
-		reject("Operation failed!"); // Rejected with an error message
+		reject("Operation failed! 😭"); 
 	}
 });
 
-async function handlePromise() {
+async function handlePromiseAsyncAwait() {
 	try {
 		const result = await myPromise;
-		console.log(result); // Logs: "Operation successful!"
+		console.log(result); 
 	} catch (error) {
-		console.error(error); // Logs: "Operation failed!"
+		console.error(error); 
 	}
 }
 
-handlePromise();
+handlePromiseAsyncAwait();
