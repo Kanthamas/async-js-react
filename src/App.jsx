@@ -8,6 +8,7 @@ import App05AsyncAwait from "./asynchronous-js/App05AsyncAwait.jsx";
 import App07AsyncAwaitFetchData from "./asynchronous-js/App07AsyncAwaitFetchData.jsx";
 import App08ReqResFetchData from "./asynchronous-js/App08ReqResFetchData.jsx";
 import App05AsyncAwaitWithClearTimeOut from "./asynchronous-js/App05AsyncAwaitWithClearTimeOut";
+import App09Pagination from "./asynchronous-js/App09Pagination.jsx";
 
 const App = () => {
 	return (
@@ -24,7 +25,9 @@ const App = () => {
 
 			{/* <App07AsyncAwaitFetchData /> */}
 
-			<App08ReqResFetchData />
+			{/* <App08ReqResFetchData /> */}
+
+			<App09Pagination />
 		</div>
 	);
 };

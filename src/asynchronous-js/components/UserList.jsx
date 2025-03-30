@@ -8,7 +8,7 @@ const UserList = ({ users }) => {
 			<ul className="font-medium grid grid-cols-3 gap-8">
 				{users.map((user) => (
 					<li
-						className="outline outline-blue-700 rounded-md shadow-md shadow-blue-600/90 px-8 py-4 h-fit flex flex-col justify-center items-center"
+						className="outline outline-blue-700 rounded-md shadow-md shadow-blue-600/90 px-8 py-4 h-[300px] flex flex-col justify-center items-center"
 						key={user.id}
 					>
 						<img

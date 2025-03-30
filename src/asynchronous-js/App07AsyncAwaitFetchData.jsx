@@ -20,9 +20,9 @@ function App07AsyncAwaitFetchData() {
 			}
 			const data = await response.json();
 			setPosts(data);
-			setLoading(false);
 		} catch (error) {
 			setError(error.message);
+		} finally {
 			setLoading(false);
 		}
 	};

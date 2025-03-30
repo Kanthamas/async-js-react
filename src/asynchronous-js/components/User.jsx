@@ -35,7 +35,9 @@ function User({ users }) {
 			<h2 className="my-4 p-4 text-3xl font-poppins font-bold">
 				{`${userDetails.first_name} ${userDetails.last_name}`}
 			</h2>
-			<p className="px-4 text-amber-950 text-2xl font-medium">{userDetails.email}</p>
+			<p className="px-4 text-amber-950 text-2xl font-medium">
+				{userDetails.email}
+			</p>
 			<Link
 				to="/"
 				className="my-8 font-semibold text-amber-200 bg-amber-900 px-8 py-2 rounded-lg shadow-md shadow-amber-700/50"
