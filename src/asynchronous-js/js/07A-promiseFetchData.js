@@ -1,13 +1,12 @@
 "use strict";
 
-/* function fetchData() {
+function fetchData() {
 	fetch("https://jsonplaceholder.typicode.com/posts")
 		.then((response) => {
 			if (!response.ok) {
 				throw new Error("Failed to fetch posts");
 			}
-			// console.log(response.body);
-			// console.log(response.json());
+
 			return response.json();
 		})
 		.then((data) => {
@@ -18,7 +17,7 @@
 		});
 }
 
-fetchData(); */
+fetchData(); 
 
 // fetch("https://jsonplaceholder.typicode.com/posts")
 // 	.then((response) => {
@@ -28,7 +27,7 @@ fetchData(); */
 // 		console.log("Error occurred: ", error);
 // 	});
 
-function fetchDataReqres() {
+/* function fetchDataReqres() {
 	fetch("https://reqres.in/api/users/2")
 		.then((response) => {
 			if (!response.ok) {
@@ -48,4 +47,4 @@ function fetchDataReqres() {
 		});
 }
 
-fetchDataReqres();
+fetchDataReqres(); */

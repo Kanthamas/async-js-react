@@ -6,21 +6,23 @@ import NotFound from "./components/NotFound";
 
 function App08ReqResFetchData() {
 	const [users, setUsers] = useState([]);
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
 
 	const fetchData = async () => {
 		try {
+			setLoading(true);
 			const endpoint = "https://reqres.in/api/users";
 			const response = await fetch(endpoint);
 			if (!response.ok) {
 				throw new Error("Failed to fetch data");
 			}
 			const data = await response.json();
+			// console.log(data.data);
 			setUsers(data.data);
-			setLoading(false);
 		} catch (error) {
 			setError(error.message);
+		} finally {
 			setLoading(false);
 		}
 	};
